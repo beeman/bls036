@@ -1,18 +1,24 @@
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
 
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
+import { AppRoutingModule } from './app-routing.module'
+import { AppComponent, CubeComponent } from './app.component'
+import { ThreeCoreModule } from '@angular-three/core'
+import { ThreeMeshModule } from '@angular-three/core/meshes'
+import { ThreeBoxBufferGeometryModule } from '@angular-three/core/geometries'
+import { ThreeMeshBasicMaterialModule } from '@angular-three/core/materials'
 
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
+  declarations: [AppComponent, CubeComponent],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ThreeCoreModule,
+    ThreeMeshModule,
+    ThreeBoxBufferGeometryModule,
+    ThreeMeshBasicMaterialModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

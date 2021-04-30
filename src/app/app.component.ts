@@ -1,43 +1,42 @@
-import { Component, ElementRef, NgZone, OnInit, ViewChild } from '@angular/core'
-import * as THREE from 'three'
+import { Component } from '@angular/core'
+import { Mesh } from 'three'
+import { ThreeEvent } from '@angular-three/core'
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css'],
+  template: `
+    <ngt-canvas>
+      <app-cube></app-cube>
+    </ngt-canvas>
+  `,
 })
-export class AppComponent implements OnInit {
-  @ViewChild('tmpl', { static: true }) tmpl: ElementRef<HTMLCanvasElement>
+export class AppComponent {}
 
-  constructor(private readonly zone: NgZone) {}
+@Component({
+  selector: 'app-cube',
+  template: `
+    <ngt-mesh
+      [scale]="active ? [2, 2, 2] : [1, 1, 1]"
+      (click)="onClick($event)"
+      (pointerover)="hover = true"
+      (pointerout)="hover = false"
+      (animateReady)="animate($event.animateObject)"
+    >
+      <ngt-box-geometry> </ngt-box-geometry>
+      <ngt-mesh-basic-material [parameters]="{ color: hover ? '#00ff00' : '#ff0000' }"> </ngt-mesh-basic-material>
+    </ngt-mesh>
+  `,
+})
+export class CubeComponent {
+  active = false
+  hover = false
+  animate(cube: Mesh): void {
+    cube.rotation.x += 0.01
+    cube.rotation.y += 0.01
+  }
 
-  ngOnInit(): void {
-    this.zone.runOutsideAngular(() => {
-      const scene = new THREE.Scene()
-      const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000)
-
-      const renderer = new THREE.WebGLRenderer({
-        canvas: this.tmpl.nativeElement,
-      })
-      renderer.setSize(window.innerWidth, window.innerHeight)
-
-      const geometry = new THREE.BoxGeometry()
-      const material = new THREE.MeshBasicMaterial({ color: 0x00ff00 })
-      const cube = new THREE.Mesh(geometry, material)
-      scene.add(cube)
-
-      camera.position.z = 5
-
-      const animate = () => {
-        requestAnimationFrame(animate)
-
-        cube.rotation.x += 0.01
-        cube.rotation.y += 0.01
-
-        renderer.render(scene, camera)
-      }
-
-      animate()
-    })
+  onClick($event: ThreeEvent<MouseEvent>): void {
+    console.log($event)
+    this.active = !this.active
   }
 }
