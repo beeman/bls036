@@ -129,6 +129,20 @@
     ora "5.3.0"
     rxjs "6.6.3"
 
+"@angular-three/controls@^1.0.0-beta.24":
+  version "1.0.0-beta.24"
+  resolved "https://registry.yarnpkg.com/@angular-three/controls/-/controls-1.0.0-beta.24.tgz#ef73aa0ed935cef2584d9453955cf83b70b171b5"
+  integrity sha512-pe7hXYGAx7KQ+lJkdoukdqp1eqPuQfazK3RyUY49SHbeI/jVZ91MLEzNDHD9ZZTcBR+SOq9pMYj+8IoecVif/g==
+  dependencies:
+    tslib "^2.0.0"
+
+"@angular-three/core@^1.0.0-beta.24":
+  version "1.0.0-beta.24"
+  resolved "https://registry.yarnpkg.com/@angular-three/core/-/core-1.0.0-beta.24.tgz#05a491412d96d6121a28a9d6d28d139a613bdbed"
+  integrity sha512-SGo2aguwhI5EV2ej1F3OFApogoblcrKeQ/H01J7RUGhg5Num0kvbJnvXxdA2WdKMwfynYT57+KVhYp18sOMfaQ==
+  dependencies:
+    tslib "^2.0.0"
+
 "@angular/animations@~11.2.12":
   version "11.2.12"
   resolved "https://registry.yarnpkg.com/@angular/animations/-/animations-11.2.12.tgz#249950d222d9e77b5af0937702058d22432507f5"
@@ -1132,6 +1146,13 @@
     merge-source-map "^1.1.0"
     schema-utils "^2.7.0"
 
+"@ngrx/component-store@^11.1.1":
+  version "11.1.1"
+  resolved "https://registry.yarnpkg.com/@ngrx/component-store/-/component-store-11.1.1.tgz#9036ada220ff287a872ad74769a0ead70e82924d"
+  integrity sha512-NUVguqhrkopRyh81873MA1R3ZcGV+MTPdVhyTZmMj7EdBNx4EC+swgssuAIO0Bc7A4WFHLWd6inohahfLLdOeg==
+  dependencies:
+    tslib "^2.0.0"
+
 "@ngtools/webpack@11.2.11":
   version "11.2.11"
   resolved "https://registry.yarnpkg.com/@ngtools/webpack/-/webpack-11.2.11.tgz#a136e0cbd783f2c4b4b9df0cd727c89eee8bd3ec"
@@ -1320,6 +1341,11 @@
   version "0.1.2"
   resolved "https://registry.yarnpkg.com/@types/source-list-map/-/source-list-map-0.1.2.tgz#0078836063ffaf17412349bba364087e0ac02ec9"
   integrity sha512-K5K+yml8LTo9bWJI/rECfIPrGgxdpeNbj+d53lwN4QjW1MCwlkhUms+gtdzigTeUyBr09+u8BwOIY3MXvHdcsA==
+
+"@types/three@^0.127.1":
+  version "0.127.1"
+  resolved "https://registry.yarnpkg.com/@types/three/-/three-0.127.1.tgz#0978054e5daa6485946a3f1518a76412186ae81f"
+  integrity sha512-e90iYq3zde3axANg7BPZY0fKrez1AzveamIIFk23PMh9WtCx91geokDy+yEAIymdIldgUpvezAP6+zCV3oekXw==
 
 "@types/webpack-sources@^0.1.5":
   version "0.1.8"
@@ -8014,6 +8040,11 @@ text-table@0.2.0:
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/text-table/-/text-table-0.2.0.tgz#7f5ee823ae805207c00af2df4a84ec3fcfa570b4"
   integrity sha1-f17oI66AUgfACvLfSoTsP8+lcLQ=
+
+three@^0.128.0:
+  version "0.128.0"
+  resolved "https://registry.yarnpkg.com/three/-/three-0.128.0.tgz#884dacca6a330e45600a09ec5439283f50b76aa6"
+  integrity sha512-i0ap/E+OaSfzw7bD1TtYnPo3VEplkl70WX5fZqZnfZsE3k3aSFudqrrC9ldFZfYFkn1zwDmBcdGfiIm/hnbyZA==
 
 through2@^2.0.0:
   version "2.0.5"
