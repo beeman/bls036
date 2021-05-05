@@ -129,17 +129,17 @@
     ora "5.3.0"
     rxjs "6.6.3"
 
-"@angular-three/controls@^1.0.0-beta.24":
-  version "1.0.0-beta.24"
-  resolved "https://registry.yarnpkg.com/@angular-three/controls/-/controls-1.0.0-beta.24.tgz#ef73aa0ed935cef2584d9453955cf83b70b171b5"
-  integrity sha512-pe7hXYGAx7KQ+lJkdoukdqp1eqPuQfazK3RyUY49SHbeI/jVZ91MLEzNDHD9ZZTcBR+SOq9pMYj+8IoecVif/g==
+"@angular-three/controls@^1.0.0-beta.28":
+  version "1.0.0-beta.28"
+  resolved "https://registry.yarnpkg.com/@angular-three/controls/-/controls-1.0.0-beta.28.tgz#09eb1c574803940313007c24b2c64ad90df7e051"
+  integrity sha512-fxu/zTbaW0bym2AjvWqLtM5BNguiz2HiZ7mOhnVDLUKUu/g+DyYKeHCkn5xCbr0zi/wBpojEyJgRQ4aoL0GZIQ==
   dependencies:
     tslib "^2.0.0"
 
-"@angular-three/core@^1.0.0-beta.24":
-  version "1.0.0-beta.24"
-  resolved "https://registry.yarnpkg.com/@angular-three/core/-/core-1.0.0-beta.24.tgz#05a491412d96d6121a28a9d6d28d139a613bdbed"
-  integrity sha512-SGo2aguwhI5EV2ej1F3OFApogoblcrKeQ/H01J7RUGhg5Num0kvbJnvXxdA2WdKMwfynYT57+KVhYp18sOMfaQ==
+"@angular-three/core@^1.0.0-beta.28":
+  version "1.0.0-beta.28"
+  resolved "https://registry.yarnpkg.com/@angular-three/core/-/core-1.0.0-beta.28.tgz#a5da26d0ae023acbafccf8292ccb45992912f25d"
+  integrity sha512-dGqR5vxZ8a0u4KOvJVB9wN/yoK9WOCp5sQMg3S3wYn8DjvEJbHdF7VOxgtW69O3WmgelzuGFz9UtgsDfh92l3g==
   dependencies:
     tslib "^2.0.0"
 

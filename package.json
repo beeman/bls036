@@ -12,8 +12,8 @@
   },
   "private": true,
   "dependencies": {
-    "@angular-three/controls": "^1.0.0-beta.24",
-    "@angular-three/core": "^1.0.0-beta.24",
+    "@angular-three/controls": "^1.0.0-beta.28",
+    "@angular-three/core": "^1.0.0-beta.28",
     "@angular/animations": "~11.2.12",
     "@angular/common": "~11.2.12",
     "@angular/compiler": "~11.2.12",
